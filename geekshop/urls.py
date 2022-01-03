@@ -34,7 +34,10 @@ urlpatterns = [
     # path('lang/', set_language, name='language'),
     # path(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
-    url('', include('social_django.urls'), namespace='social'),
+
+    url('', include('social_django.urls',namespace='social')),
+
+
 
 ]
 
