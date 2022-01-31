@@ -1,0 +1,83 @@
+    1  ssh-copy-id root@194.58.120.152
+    2  ssh-keygen
+    3  cat /root/.ssh/id_rsa.pub
+    4  apt update
+    5  apt install nginx
+    6  apt install postgresql postgresql-contrib
+    7  apt install python3-venv
+    8  apt install git-core
+    9  nano /etc/postgresql/10/main/pg_hba.conf
+   10  apt install postgresql postgresql-contrib
+   11  nano /etc/postgresql/10/main/pg_hba.conf
+   12  ls 
+   13  ls /etc/postgresql/10/main/
+   14  apt update
+   15  apt install postgresql postgresql-contrib
+   16  nano /etc/postgresql/10/main/pg_hba.conf
+   17  ll
+   18  ll /etc/postgresql
+   19  nano /etc/postgresql/12/main/pg_hba.conf
+   20  systemctl restart postgresql
+   21  useradd -g www-data -m django
+   22  cd /home/django/
+   23  git clone git@github.com:1Magnus/GBSHV4.git
+   24  ls
+   25  python3 -m venv env
+   26  source env/bin/activate
+   27  git branch
+   28  cd GBSHV4/
+   29  ls
+   30  git branch
+   31  git pull
+   32  git checkout lesson5
+   33  git pull
+   34  ls
+   35  cd geekshop/
+   36  pip3 install -r requirements.txt
+   37  ls
+   38  ll
+   39  cd .
+   40  .
+   41  cd ./
+   42  ./
+   43  ..
+   44  ../
+   45  cd ../
+   46  ll
+   47  pip3 install -r requirements.txt
+   48  pip3 install -r requiremets.txt
+   49  pip3 install wheel
+   50  pip3 install gunicorn
+   51  psql -U postgres
+   52  ll
+   53  python3 manage.py migrate
+   54  python3 manage.py fill_db
+   55  python3 manage.py runserver
+   56  python3 manage.py runserver 0.0.0.0:8000
+   57  sudo nano /etc/systemd/system/gunicorn.service
+   58  sudo systemctl enable gunicorn
+   59  sudo systemctl start gunicorn
+   60  sudo systemctl status gunicorn
+   61  chown -R django /home/django/
+   62  sudo systemctl restart gunicorn.service 
+   63  sudo systemctl status gunicorn
+   64  sudo nano /etc/systemd/system/gunicorn.service
+   65  ll
+   66  sudo systemctl restart gunicorn.service 
+   67  systemctl daemon-reload
+   68  sudo systemctl restart gunicorn.service 
+   69  sudo systemctl status gunicorn
+   70  cls
+   71  ls geekshop/
+   72  sudo nano /etc/nginx/sites-available/geekshop
+   73  ln -s /etc/nginx/sites-available/geekshop /etc/nginx/sites-enabled/
+   74  rm /etc/nginx/sites-enabled/default 
+   75  sudo systemctl restart gunicorn.service 
+   76  nginx -t
+   77  systemctl restart nginx
+   78  status nginx
+   79  systemctl status nginx
+   80  tail -f /var/log/nginx/error.log 
+   81  python3 manage.py createsuperuser
+   82  sudo systemctl restart gunicorn.service 
+   83  history > /tmp/history.txt
